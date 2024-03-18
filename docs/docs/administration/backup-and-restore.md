@@ -20,7 +20,7 @@ The recommended way to backup and restore the Immich database is to use the `pg_
 <Tabs>
   <TabItem value="Linux system based Backup" label="Linux system based Backup" default>
 
-```bash title='Bash'
+```bash title='Backup'
 docker exec -t immich_postgres pg_dumpall -c -U postgres | gzip > "/path/to/backup/dump.sql.gz"
 ```
 
@@ -107,7 +107,7 @@ Some storage locations are impacted by the Storage Template. See below for more 
 **1. User-Specific Folders:**
 
 - Each user has a unique string representing them.
-- You can find your user ID in Account Account Settings -> Account -> User ID.
+- You can find your user ID in Account -> Account Settings -> Account -> User ID.
 
 **2. Asset Types and Storage Locations:**
 
